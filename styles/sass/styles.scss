@@ -1,0 +1,178 @@
+@mixin background($path) {
+    background-image: url('../../../img/'+$path)
+}
+
+@mixin absolutePositioning($top,
+$left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+}
+
+@mixin widthHeight($width,
+$height) {
+    width: $width;
+    height: $height;
+}
+
+@font-face {
+    font-family: creditCardFont;
+    src: url('../../../credit_card_font/crc.ttf');
+}
+
+img {
+    @include absolutePositioning(8%,
+    65%);
+    @include widthHeight(30%,
+    auto);
+}
+
+.chip {
+    @include absolutePositioning(15%,
+    10%);
+    @include widthHeight(17.5%,
+    23%);
+    border-radius: 27%;
+    @include background('chip.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cardNumber {
+    @include absolutePositioning(48%,
+    10%);
+    @include widthHeight(80%,
+    15%);
+    font-family: creditCardFont;
+    color: #fff;
+    padding: 1%;
+}
+
+.name {
+    @include absolutePositioning(70%,
+    10%);
+    @include widthHeight(50%,
+    15%);
+    font-family: creditCardFont;
+    color: #fff;
+    padding: 1%;
+}
+
+.date {
+    @include absolutePositioning(70%,
+    70%);
+    @include widthHeight(30%,
+    15%);
+    font-family: creditCardFont;
+    color: #fff;
+    padding: 1%;
+}
+
+.blackStripe {
+    @include absolutePositioning(13%,
+    0);
+    @include widthHeight(100%,
+    20%);
+    background: #000;
+}
+
+.signatureStripe {
+    @include absolutePositioning(40%,
+    3%);
+    @include widthHeight(78%,
+    15%);
+    background: #fff;
+    border-radius: 3px;
+}
+
+.cvv {
+    @include absolutePositioning(40%,
+    85%);
+    @include widthHeight(78%,
+    15%);
+    font-family: creditCardFont;
+    color: #fff;
+    padding: 1%;
+}
+
+.gologram {
+    @include background('hologram.jpg');
+    @include absolutePositioning(64%,
+    3%);
+    @include widthHeight(17.5%,
+    23%);
+    border-radius: 27%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rules {
+    font-size: 10px;
+    @include absolutePositioning(64%,
+    25%);
+    @include widthHeight(68%,
+    23%);
+    color: darkgray;
+}
+
+.notActive,
+.visaStyle,
+.masterCardStyle,
+.americarExpressStyle {
+    width: 50%;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 2px 2px 20px;
+}
+
+.notActive {
+    @include background('notActive.jpg');
+    background-size: cover;
+}
+
+.visaStyle {
+    @include background('visa.jpg');
+    background-size: cover;
+}
+
+.masterCardStyle {
+    @include background('mc.jpg');
+    background-size: cover;
+}
+
+.americarExpressStyle {
+    @include background('ae.jpg');
+    background-size: cover;
+}
+
+.back {
+    display: none;
+}
+
+form {
+    label,
+    input {
+        display: block;
+        width: 90%;
+        border-radius: 5px;
+        color: grey;
+        font-size: 19px;
+    }
+    label,{
+        font-size: 23px;
+    }
+    input[type="text"] {
+        border-radius: 7px;
+        padding: 8px;
+        border: solid 1px #dcdcdc;
+        transition: box-shadow 0.3s, border 0.3s;
+        margin-top: 2.5%;
+    }
+    input[type="text"]:focus,
+    input[type="text"].focus {
+        border-radius: 7px;
+        border: solid 1px #707070;
+        box-shadow: 0 0 5px 1px #969696;
+    }
+}
