@@ -7,7 +7,8 @@ img {
   top: 8%;
   left: 65%;
   width: 30%;
-  height: auto; }
+  height: auto;
+  border-radius: 2px; }
 
 .chip {
   position: absolute;
@@ -98,8 +99,10 @@ img {
   color: darkgray; }
 
 .notActive,
-.visaStyle {
-  width: 50%;
+.visaStyle,
+.masterCardStyle,
+.americarExpressStyle {
+  width: 309px;
   height: 200px;
   border-radius: 10px;
   position: relative;
@@ -121,10 +124,10 @@ img {
   background-image: url("../../../img/ae.jpg");
   background-size: cover; }
 
-.noDisplay {
+#noDisplay {
   display: none; }
 
-.display {
+#display {
   display: block; }
 
 form label,
@@ -143,7 +146,7 @@ form input[type="text"] {
   padding: 8px;
   border: solid 1px #dcdcdc;
   transition: box-shadow 0.3s, border 0.3s;
-  margin-top: 2.5%; }
+  margin-top: 1.5%; }
 
 form input[type="text"]:focus,
 form input[type="text"].focus {

@@ -5,53 +5,67 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="styles/css/styles.css/styles.css">
+    <link rel="stylesheet" href="styles/css/styles.css/animate.css">
 </head>
 
 <body>
-
-         <div id="card ">
-            <div id="front" class="  notActive"><img src="./img/mcard.png" alt="visa_icon">
-                <div class="chip">
-        
-                </div>
-                <div class=" cardNumber" >1234 1234 1234 1234</div>
-                <div class="name">YOUR FULL NAME</div>
-                <div class="date">**/**</div>
-            </div>
-            <div id="back" class="noDisplay notActive">
-                <div class="blackStripe"></div>
-                <div class="signatureStripe"></div>
-                <div class="gologram"></div>
-                <div class="rules"> The Card is an eftpos prepaid gift card that must be activated within 3 months from the date of issue. To activate the Card you must go online to www.giftcardplanet.com.au and enter in the card details
-                </div>
-                <div class="cvv">***</div>
-            </div>
+    <!--container for back and front sides of the card-->
+    <div id="card ">
+        <!--container for front side of card-->
+        <div id="display" class="notActive animated flipInY" name="front"><img src="./img/noStyle.png" alt="icon">
+            <!-- container for chip image-->
+            <div class="chip"></div>
+            <!-- container for card number-->
+            <div class=" cardNumber">1234 1234 1234 1234</div>
+            <!-- container for name-->
+            <div class="name">YOUR FULL NAME</div>
+            <!-- container for date-->
+            <div class="date">**/**</div>
         </div>
-  
+        <!--container for back side of card-->
+        <div id="noDisplay" class="animated flipInY notActive" name="back">
+            <!--container for black stripe on card-->
+            <div class="blackStripe"></div>
+            <!--container for signature on card-->
+            <div class="signatureStripe"></div>
+            <!--container for gologram on card-->
+            <div class="gologram"></div>
+            <!--container for rules on card-->
+            <div class="rules"> The Card is an eftpos prepaid gift card that must be activated within 3 months from the date of issue. To activate the Card you must go online to www.giftcardplanet.com.au and enter in the card details
+            </div>
+            <!--container for cvc on card-->
+            <div class="cvv">***</div>
+        </div>
+    </div>
 
-    <form action="">
+
+    <form action="#">
         <br>
         <br>
         <label for="cardNumber">Card Number
-            <input id="cardNumber"   name="cardNumber" type="text" placeholder="1234 1234 1234 1234" >
+            <!--input for number on card-->
+            <input id="cardNumber" name="cardNumber" type="text" placeholder="1234 1234 1234 1234">
         </label>
 
         <br>
         <label for="name">Full Name
-            <input id="name" name="name" type="text" placeholder="Your full name" >
+            <!--input for name on card-->
+            <input id="name" name="name" type="text" placeholder="Your full name">
         </label>
 
         <br>
         <label for="expiry">Expiry
-            <input id="expiry" name="expiry" type="text" placeholder="**/**">
+            <!--input for expiry date on card-->
+            <input id="expiry" name="expiry" type="text" placeholder="MM/YY">
         </label>
 
         <br>
         <label for="cvv">CVC
+            <!--input for cvc on card-->
             <input id="cvv" name="cvv" type="text" placeholder="***">
         </label>
     </form>
-     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
