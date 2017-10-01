@@ -1,0 +1,151 @@
+@font-face {
+  font-family: creditCardFont;
+  src: url("../../../credit_card_font/crc.ttf"); }
+
+img {
+  position: absolute;
+  top: 8%;
+  left: 65%;
+  width: 30%;
+  height: auto; }
+
+.chip {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 17.5%;
+  height: 23%;
+  border-radius: 27%;
+  background-image: url("../../../img/chip.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.cardNumber {
+  position: absolute;
+  top: 48%;
+  left: 10%;
+  width: 80%;
+  height: 15%;
+  font-family: creditCardFont;
+  color: #fff;
+  padding: 1%; }
+
+.name {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  width: 50%;
+  height: 15%;
+  font-family: creditCardFont;
+  color: #fff;
+  padding: 1%; }
+
+.date {
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  width: 30%;
+  height: 15%;
+  font-family: creditCardFont;
+  color: #fff;
+  padding: 1%; }
+
+.blackStripe {
+  position: absolute;
+  top: 13%;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: #000; }
+
+.signatureStripe {
+  position: absolute;
+  top: 40%;
+  left: 3%;
+  width: 78%;
+  height: 15%;
+  background: #fff;
+  border-radius: 3px; }
+
+.cvv {
+  position: absolute;
+  top: 40%;
+  left: 85%;
+  width: 78%;
+  height: 15%;
+  font-family: creditCardFont;
+  color: #fff;
+  padding: 1%; }
+
+.gologram {
+  background-image: url("../../../img/hologram.jpg");
+  position: absolute;
+  top: 64%;
+  left: 3%;
+  width: 17.5%;
+  height: 23%;
+  border-radius: 27%;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.rules {
+  font-size: 10px;
+  position: absolute;
+  top: 64%;
+  left: 25%;
+  width: 68%;
+  height: 23%;
+  color: darkgray; }
+
+.notActive,
+.visaStyle,
+.masterCardStyle,
+.americarExpressStyle {
+  width: 50%;
+  height: 200px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 2px 2px 20px; }
+
+.notActive {
+  background-image: url("../../../img/notActive.jpg");
+  background-size: cover; }
+
+.visaStyle {
+  background-image: url("../../../img/visa.jpg");
+  background-size: cover; }
+
+.masterCardStyle {
+  background-image: url("../../../img/mc.jpg");
+  background-size: cover; }
+
+.americarExpressStyle {
+  background-image: url("../../../img/ae.jpg");
+  background-size: cover; }
+
+.back {
+  display: none; }
+
+form label,
+form input {
+  display: block;
+  width: 90%;
+  border-radius: 5px;
+  color: grey;
+  font-size: 19px; }
+
+form label {
+  font-size: 23px; }
+
+form input[type="text"] {
+  border-radius: 7px;
+  padding: 8px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+  margin-top: 2.5%; }
+
+form input[type="text"]:focus,
+form input[type="text"].focus {
+  border-radius: 7px;
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696; }

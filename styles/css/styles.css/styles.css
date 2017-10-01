@@ -98,9 +98,7 @@ img {
   color: darkgray; }
 
 .notActive,
-.visaStyle,
-.masterCardStyle,
-.americarExpressStyle {
+.visaStyle {
   width: 50%;
   height: 200px;
   border-radius: 10px;
@@ -123,8 +121,11 @@ img {
   background-image: url("../../../img/ae.jpg");
   background-size: cover; }
 
-.back {
+.noDisplay {
   display: none; }
+
+.display {
+  display: block; }
 
 form label,
 form input {

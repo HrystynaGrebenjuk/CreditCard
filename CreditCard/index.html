@@ -8,17 +8,17 @@
 </head>
 
 <body>
-
-         <div id="card ">
-            <div id="front" class="  notActive"><img src="./img/mcard.png" alt="visa_icon">
+    <div class="card-container">
+        <div class="card ">
+            <div class="side notActive front"><img src="./img/mcard.png" alt="visa_icon">
                 <div class="chip">
-        
+
                 </div>
-                <div class=" cardNumber" >1234 1234 1234 1234</div>
+                <div id="result" class=" cardNumber">1234 1234 1234 1234</div>
                 <div class="name">YOUR FULL NAME</div>
                 <div class="date">**/**</div>
             </div>
-            <div id="back" class="noDisplay notActive">
+            <div class="side back notActive">
                 <div class="blackStripe"></div>
                 <div class="signatureStripe"></div>
                 <div class="gologram"></div>
@@ -27,18 +27,17 @@
                 <div class="cvv">***</div>
             </div>
         </div>
-  
-
+    </div>
     <form action="">
         <br>
         <br>
         <label for="cardNumber">Card Number
-            <input id="cardNumber"   name="cardNumber" type="text" placeholder="1234 1234 1234 1234" >
+            <input id="cardNumber" name="cardNumber" type="text" placeholder="1234 1234 1234 1234">
         </label>
 
         <br>
         <label for="name">Full Name
-            <input id="name" name="name" type="text" placeholder="Your full name" >
+            <input id="name" name="name" type="text" placeholder="Your full name">
         </label>
 
         <br>
@@ -47,12 +46,10 @@
         </label>
 
         <br>
-        <label for="cvv">CVC
-            <input id="cvv" name="cvv" type="text" placeholder="***">
+        <label for="expiry">CVC
+            <input id="expiry" name="cvv" type="text" placeholder="***">
         </label>
     </form>
-     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 

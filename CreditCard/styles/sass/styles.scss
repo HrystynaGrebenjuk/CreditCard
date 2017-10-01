@@ -1,27 +1,32 @@
 @mixin background($path) {
     background-image: url('../../../img/'+$path)
 }
+
 @mixin absolutePositioning($top,
 $left) {
     position: absolute;
     top: $top;
     left: $left;
 }
+
 @mixin widthHeight($width,
 $height) {
     width: $width;
     height: $height;
 }
+
 @font-face {
     font-family: creditCardFont;
     src: url('../../../credit_card_font/crc.ttf');
 }
+
 img {
     @include absolutePositioning(8%,
     65%);
     @include widthHeight(30%,
     auto);
 }
+
 .chip {
     @include absolutePositioning(15%,
     10%);
@@ -32,6 +37,7 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .cardNumber {
     @include absolutePositioning(48%,
     10%);
@@ -41,6 +47,7 @@ img {
     color: #fff;
     padding: 1%;
 }
+
 .name {
     @include absolutePositioning(70%,
     10%);
@@ -50,6 +57,7 @@ img {
     color: #fff;
     padding: 1%;
 }
+
 .date {
     @include absolutePositioning(70%,
     70%);
@@ -59,6 +67,7 @@ img {
     color: #fff;
     padding: 1%;
 }
+
 .blackStripe {
     @include absolutePositioning(13%,
     0);
@@ -66,6 +75,7 @@ img {
     20%);
     background: #000;
 }
+
 .signatureStripe {
     @include absolutePositioning(40%,
     3%);
@@ -74,6 +84,7 @@ img {
     background: #fff;
     border-radius: 3px;
 }
+
 .cvv {
     @include absolutePositioning(40%,
     85%);
@@ -83,6 +94,7 @@ img {
     color: #fff;
     padding: 1%;
 }
+
 .gologram {
     @include background('hologram.jpg');
     @include absolutePositioning(64%,
@@ -93,6 +105,7 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .rules {
     font-size: 10px;
     @include absolutePositioning(64%,
@@ -101,35 +114,42 @@ img {
     23%);
     color: darkgray;
 }
+
 .notActive,
-.visaStyle,{width:50%;
+.visaStyle,
+.masterCardStyle,
+.americarExpressStyle {
+    width: 50%;
     height: 200px;
     border-radius: 10px;
     position: relative;
     box-shadow: 2px 2px 20px;
 }
+
 .notActive {
     @include background('notActive.jpg');
     background-size: cover;
 }
+
 .visaStyle {
     @include background('visa.jpg');
     background-size: cover;
 }
+
 .masterCardStyle {
     @include background('mc.jpg');
     background-size: cover;
 }
+
 .americarExpressStyle {
     @include background('ae.jpg');
     background-size: cover;
 }
-.noDisplay {
+
+.back {
     display: none;
 }
-.display{
-    display: block;
-}
+
 form {
     label,
     input {
@@ -139,8 +159,7 @@ form {
         color: grey;
         font-size: 19px;
     }
-    label,
-    {
+    label,{
         font-size: 23px;
     }
     input[type="text"] {
@@ -156,5 +175,4 @@ form {
         border: solid 1px #707070;
         box-shadow: 0 0 5px 1px #969696;
     }
-    
-
+}
